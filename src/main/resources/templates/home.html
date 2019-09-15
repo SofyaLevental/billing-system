@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -12,6 +14,6 @@
 <head><title>Home Page</title></head>
 <body>
 <h1>Hello !</h1>
-<p>Welcome to our App</span></p>
+<p>Welcome to <span th:text="${appName}">Our App</span></p>
 </body>
 </html>
